@@ -1,0 +1,40 @@
+/* src/input.css */
+@import "tailwindcss";
+
+body{
+  font-family: "Figtree", sans-serif;
+}
+/* use @theme to define and extend your project's custom design tokens directly within your CSS.  */
+ @theme{
+ --color-yellow: hsl(47, 88%, 63%);
+ --shadow-shadow: 8px 8px 0px 0px #000000;
+} 
+
+
+@layer base{
+
+img{
+  @apply max-w-full h-auto;
+}
+p{
+  @apply text-gray-500 leading-relaxed text-[clamp(14px,1vw+0.5rem,16px)];
+}
+}
+ @layer components {
+  .card{
+    @apply bg-white p-[clamp(20px,3vw,24px)] mx-4  space-y-5 rounded-2xl border-2 border-gray-900 w-[clamp(327px,50vw,384px)];
+  }
+  .card-content{
+    @apply space-y-3 cursor-pointer;
+  }
+    .card-caption{
+    @apply  bg-yellow inline-block font-bold py-1 px-3 rounded-sm  text-[0.85rem];
+  }
+
+  .card-title{
+    @apply text-2xl font-black text-gray-900 hover:text-yellow transition-colors duration-200;
+  }
+  .card-profile-Img{
+    @apply flex  items-center gap-2.5 font-black;
+  }
+}
