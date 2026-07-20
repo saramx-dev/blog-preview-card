@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Links
 - **Solution URL:** [Repository link](https://github.com/saramx-dev/blog-preview-card?tab=readme-ov-file)
-- **Live Site URL:** [Click here]()https://saramx-dev.github.io/blog-preview-card/
+- **Live Site URL:** [Click here](https://saramx-dev.github.io/blog-preview-card/)
 
 ---
 
